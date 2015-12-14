@@ -6,31 +6,26 @@ html
     link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    // Boostrap nav bar to top of window
-    .navbar.navbar-default.navbar-fixed-top
-        .container
-          .navbar-header
-            // Brand styled link to navbar
-            a.navbar-brand(href='/') LocateR
-              // Set up collapsing navigation for smaller screen resolutions
-              button.navbar-tottle(type='button', data-toggle='collapse', data-target='#navbar-main')
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-          #navbar-main.navbar-collapse.collapse
-            ul.nav.navbar-nav
-              li
-                a(href='/about/') About
+   .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') LocateR
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/about/') About
 
     .container
       block content
 
       footer
         .row
-            .col-xs-12
-                small &copy; Dnwin 2015
-
-
+          .col-xs-12
+            small &copy; dnwin 2015
 
     script(src='/javascripts/jquery-1.11.3.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
