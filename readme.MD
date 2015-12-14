@@ -2,4 +2,4 @@
 Displays a list of free wi-fi spots with reviews. Built on a MEAN Stack.
 
 ## Demo:
-https://frozen-cliffs-5729.herokuapp.com/
+https://thawing-chamber-8731.herokuapp.com/
