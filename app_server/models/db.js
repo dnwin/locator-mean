@@ -1,6 +1,10 @@
 var mongoose = require( 'mongoose');
 var gracefulShutdown;
 var dbURI = 'mongodb://localhost/LocateR';
+//if (process.env.NODE_ENV == 'production') {
+//    dbURI = process.env.MONGOLAB_URI;
+//}
+
 require('./locations');
 
 
