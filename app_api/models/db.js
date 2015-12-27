@@ -1,10 +1,13 @@
 var mongoose = require( 'mongoose');
 var gracefulShutdown;
 var dbURI = 'mongodb://localhost/LocateR';
+
+// Alternative URI for production
 //if (process.env.NODE_ENV == 'production') {
 //    dbURI = process.env.MONGOLAB_URI;
 //}
 
+// Require Schemas/Models
 require('./locations');
 
 
